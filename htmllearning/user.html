@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user</title>
+</head>
+<body>
+<table border="1" bordercolor="blue">
+    <tr>
+        <td>操作 </td>
+        <td>编号</td>
+        <td>姓名</td>
+    </tr>
+    <tr>
+        <td><input type="button" value="选择" onclick="s1('002','东方不败')"></td>
+        <td>002</td>
+        <td>东方不败</td>
+    </tr>
+    <tr>
+        <td><input type="button" value="选择" onclick="s1('003','林平之')"></td>
+        <td>003</td>
+        <td>林平之</td>
+    </tr>
+    <tr>
+        <td><input type="button" value="选择" onclick="s1('001','岳不群')"></td>
+        <td>001</td>
+        <td>岳不群</td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    function s1(num,name) {
+        var pwin= window.opener;
+        pwin.document.getElementById("numid").value=num;
+        pwin.document.getElementById("nameid").value=name;
+        window.close();
+    }
+</script>
+
+</body>
+</html>
